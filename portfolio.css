@@ -1,0 +1,437 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behaviour: smooth;
+}
+
+body {
+  font-family: Bree Serif;
+}
+
+.nav {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  justify-content: flex-end; 
+  align-items: center;
+  background: black;
+  top: 0;
+  left: 0;
+  box-shadow: 0 4px 8px #3498DB;
+  z-index: 10;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin-right: 35px;
+  font-size: 25px;;
+} 
+
+.nav-list a {
+  display: block;
+  padding: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: monospace;
+  color: white;
+}
+
+.nav-list a:hover {
+  background: #5F6A6A;
+}
+
+#profile{
+	display: block;
+	margin:0 auto;
+
+	height: 200px;
+	width: 200px;
+	object-fit: cover;
+	border:2px solid var(--borderColor);
+}
+
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-image: url(http://avatartechworld.com/img/home-banner-WebDevelopment.jpg);
+  justify-content: center;
+  align-items: center;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.welcome-section > h1 {
+  font-size: 60px;
+  font-family: monospace;
+  font-weight: bold;
+  color: rgb(12, 8, 8);
+  margin-bottom: 0em;
+}
+
+.welcome-section > p {
+  font-size: 30px;
+  margin-top: 0em;
+  font-style: italic;
+  color: rgb(170, 169, 169);
+}
+
+.project-section {
+  width: 100%;
+  background: white;
+  text-align: center;
+  padding-top: 10px;
+  background: linear-gradient(white, #424949);
+  border-bottom: 4px solid black;
+  border-top: 4px solid black;
+}
+
+.project-section-header {
+  width: 55%;
+  margin: 100px auto 50px auto;
+  padding: 5px;
+  font-size: 43px;
+  font-weight: bold;
+  color: black;
+  border: 4px solid black;
+  border-radius: 10px;
+  box-shadow: 5px 10px 10px;
+  background: #FDFEFE ;
+  font-family: lato,Helvetica,Arial,Lucida,sans-serif; 
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-top: 50px;
+  grid-gap: 60px;
+  width: 80%;
+  padding-left: 9.5%;
+  padding-right: 10%;
+  padding-top: 35px;
+}
+
+.project-title {
+  font-size: 20px;
+  background: black;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+  padding: 15px;
+  margin-top: 0;
+  border-radius: 10px;
+  color: white;
+}
+
+.project-image {
+  width: 100%;
+  height: 330px;
+  border-radius: 10px;
+  box-shadow: 2px 2px black;
+}
+
+.project-tile{
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.button {
+  display: inline-block;
+  padding: 7px 10px;
+  border-radius: 2px;
+  font-size: 22px;
+  background: black;
+  transition: background 0.2s ease-out;
+  margin-bottom: 100px;
+  margin-top: 50px;
+  text-decoration: none;
+  color: white;
+  border: 3px solid black;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background: white ;
+  color: black;
+  font-weight: bold;
+}
+
+.button:hover > i {
+  transform: translateX(2px);
+}
+
+.button > i {
+  margin-left: 10px;
+  transform: translateX(0);
+  transition: transform 0.3s ease-out;
+}
+
+.code {
+  color: black;
+  transition: color 0.3s ease-out;
+  font-weight: 2000;
+}
+
+.project-tile:hover .code {
+  color: white;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 80vh;
+  padding: 0 ;
+  background: white;
+  background: linear-gradient(#424949, white);
+  
+}
+
+.contact-section-header > h2 {
+  font-size: 50px;
+  margin-bottom: 0;
+}
+
+.contact-section-header > p {
+  font-style: italic;
+  font-size: 25px;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 980px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.contact-details {
+  font-size: 25px;
+  text-shadow: 1px 1px 1px black;
+  transition: transform 0.3s ease-out;
+  margin-bottom: 50px;
+  padding: 10px;
+  text-decoration: none;
+  margin-top: 50px;
+  color: #3498DB;
+}
+
+.contact-details:hover {
+  transform: translateY(5px);
+  color: #CB4335;
+}
+
+footer {
+  font-weight: 300;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0px;
+  background: black;
+  border-top: 4px solid #3498DB;
+}
+
+footer > p {
+  margin: 30px;
+  font-size: 20px;
+  color: white;
+}
+
+footer i {
+  vertical-align: middle;
+}
+
+footer a {
+  color: #3498DB;
+}
+
+@media (max-width: 850px) {
+.nav {
+  height: 65px;
+  box-shadow: 0 3px 6px #3498DB;
+}
+
+.nav-list {
+  margin-right: 20px;
+  font-size: 20px;
+} 
+
+.nav-list a {
+  padding: 21px;
+}
+}
+
+@media (max-width: 1200px){
+footer > p {
+  font-size: 1.4vw;
+  margin: 25px;
+}
+
+.welcome-section > h1 {
+  font-size: 5vw;
+}
+
+.welcome-section > p {
+  font-size: 2.5vw;
+}
+
+.project-section-header {
+  width: 55%;
+  margin: 9vw auto 0 auto;
+  font-size: 3.5vw;
+  border: 3px solid black;
+  border-radius: 6px;
+  box-shadow: 4px 6px 8px;
+}
+
+.projects-grid {
+  grid-gap: 6vw;
+  margin-top: 5vw;
+  width: 80%;
+  padding-left: 10%;
+}
+
+.project-title {
+  font-size: 2vw;
+  padding: 1.5vw;
+  border-radius: 1vw;
+}
+
+.project-image {
+  height: 30vw;
+  border-radius: 1vw;
+}
+
+.button {
+  padding: .7vw 1vw;
+  font-size: 2.3vw;
+  margin-bottom: 10vw;
+  margin-top: 5vw;
+  border: .3vw solid black;
+}
+
+.contact-section-header > h2 {
+  font-size: 5vw;
+}
+
+.contact-section-header > p {
+  font-size: 2.5vw;
+}
+
+.contact-details {
+  font-size: 2.2vw;
+  margin-bottom: 4.5vw;
+  text-shadow: 0.1vw 0.1vw 0.1vw black;
+  padding: 1vw;
+  margin-top: 5vw;
+}
+}
+
+@media (max-width: 500px ) {
+footer {
+  flex-direction: column;
+  text-align: center;
+}
+
+.project-section-header {
+  width: 325px;
+  margin: 25px auto 25px auto;
+  border-bottom: 0px;
+  padding: 2.5px;
+  font-size: 21px;
+  border-radius: 5px;
+  border: 2px solid black;
+  box-shadow: 2.5px 3px 5px;
+}
+
+.projects-grid {
+  margin-top: 25px;
+  grid-gap: 30px;
+  width: 80%;
+  padding-top: 15px;
+}
+
+.project-image {
+  height: 150px;
+  border-radius: 5px;
+  box-shadow: 1px 1px black;
+}
+
+.project-title {
+  font-size: 11px;
+  box-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.5);
+  border-radius: 1px;
+  padding: 7px;
+  border-radius: 4px;
+}
+
+.contact-section-header > h2 {
+  font-size: 28px;
+}
+
+.contact-section-header > p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.welcome-section > h1 {
+  font-size: 25px;
+  font-weight: 1200px;
+}
+
+.welcome-section > p {
+  font-size: 16px;
+}
+
+.button {
+  padding: 4px;
+  border-radius: 1px;
+  font-size: 14px;
+  transition: background 0.2s ease-out;
+  margin-bottom: 50px;
+  margin-top: 30px;
+  border: 1.5px solid black;
+  border-radius: 3px; 
+}
+
+.contact-details {
+  font-size: 15px;
+  text-shadow: 0.5px 0.5px 0.5px black;
+  margin-bottom: 20px;
+  padding: 7px;
+  margin-top: 20px;
+}
+
+footer {
+  font-weight: 50;
+}
+
+footer > p {
+  margin: 10px;
+  font-size: 12px;
+}
+
+.nav {
+  height: 60px;
+  box-shadow: 0 1px 3px #3498DB;
+}
+
+.nav-list {
+  margin-right: 5px;
+  font-size: 15px;
+} 
+
+.nav-list a {
+  padding: 15px;
+}
+}
